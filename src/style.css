@@ -2,11 +2,133 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-
+  h1 {
+    font-family: "Bebas Neue", sans-serif;
+  }
+  h2 {
+    font-family: "Bebas Neue", sans-serif;
+  }
+  h3 {
+    font-family: "arial", sans-serif;
+  }
+  p {
+    font-family: "arial", sans-serif;
+  }
 }
 
 @layer components {
-    
+  /* ____________MOBIL ______________*/
+  @media only screen and (max-width: 600px) {
+    button {
+      border: solid 2px #0027f4;
+      color: #0027f4;
+      padding: 8px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 0.7rem;
+      margin: 5px;
+    }
+
+    /* fonte */
+    h1 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      font-style: normal;
+      text-align: center;
+      margin: 5px;
+    }
+    h2 {
+      font-size: 1.9rem;
+      margin: 5px;
+    }
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      margin: 5px;
+    }
+    p {
+      font-size: 0.9rem;
+      margin: 5px;
+    }
+  }
+
+  /* ____________ WEB ______________*/
+  @media only screen and (min-width: 600px) {
+    button {
+      border: solid 2px #0027f4;
+      color: #0027f4;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1rem;
+      margin: 10px;
+    }
+
+    /* ____________ font size ______________*/
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      font-style: normal;
+      text-align: center;
+      margin-top: 5px;
+    }
+    h2 {
+      font-size: 2.1rem;
+      text-align: center;
+      margin-top: 5px;
+    }
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-top: 5px;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-top: 5px;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+  /* AUTO MIN MAX */
+
+  .autominmax {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 }
