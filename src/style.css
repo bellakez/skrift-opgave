@@ -20,6 +20,13 @@
 @layer components {
   /* ____________MOBIL ______________*/
   @media only screen and (max-width: 600px) {
+    .forsidebillede {
+      background-image: url(forside2.jpg);
+      aspect-ratio: 1125/2000;
+      position: relative;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
     button {
       border: solid 2px #0027f4;
       color: #0027f4;
@@ -56,6 +63,13 @@
 
   /* ____________ WEB ______________*/
   @media only screen and (min-width: 600px) {
+    .forsidebillede {
+      background-image: url(forside.jpg);
+      aspect-ratio: 1920/1080;
+      position: relative;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
     button {
       border: solid 2px #0027f4;
       color: #0027f4;
